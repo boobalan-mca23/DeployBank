@@ -1,0 +1,52 @@
+.create{
+  display: grid;
+  gap: 10px;
+  grid-template-columns:100%;
+  grid-template-rows:repeat(2,1fr) ;
+  padding: 20px;
+}
+#createimg{
+  height: 500px;
+  width: 100%;
+}
+.create-img,.create-form{
+  width: 100%;
+}
+form{
+  width:100%;
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+  .create{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:100%;
+    grid-template-rows:repeat(2,1fr) ;
+    padding: 10px;
+  }
+ 
+    
+   
+}
+
+@media screen and (min-width:990px) {
+  .create{
+    display: grid;
+    gap: 5px;
+    grid-template-columns:repeat(2,1fr);
+   
+  }
+  #label{
+    margin-left: 5px;
+   }
+   #input{
+    width:300px;
+    margin-left: 50px;
+  }
+    
+   
+}
