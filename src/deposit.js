@@ -27,7 +27,7 @@ function handleClick(e){
       if(data[i].id === Number(userId)){
          data[i].amount=Number(data[i].amount)+Number(dep);
          updateData={amount:data[i].amount};
-         let url=`http://localhost:8080/update/${data[i]._id}`
+         let url=`https://bankserver-nuz1.onrender.com/update/${data[i]._id}`
           axios.put(url,updateData);
           alert(`Rs.${dep} Amount Credited on Your Account`)
       }
