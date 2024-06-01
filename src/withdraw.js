@@ -13,7 +13,7 @@ export default function Withdraw(){
     const [data,setData]=useState([])
     useEffect(()=>{
         const fetchdata=async()=>{
-           await axios.get('http://localhost:8080/data').then((item)=>{setData(item.data)})
+           await axios.get('https://bankserver-nuz1.onrender.com').then((item)=>{setData(item.data)})
         };fetchdata()
      },[]);
 
